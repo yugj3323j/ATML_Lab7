@@ -1,0 +1,9 @@
+torch
+streamlit
+numpy
+pandas
+nltk
+matplotlib
+kagglehub
+transformers
+sentencepiece

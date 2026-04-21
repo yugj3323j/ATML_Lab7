@@ -1,0 +1,70 @@
+{
+  "dataset": {
+    "path": "mt_project/Dataset_English_Hindi.csv",
+    "total_samples": 7947,
+    "train_samples": 6357,
+    "test_samples": 1590
+  },
+  "config": {
+    "epochs": 8,
+    "batch_size": 64,
+    "embedding_dim": 128,
+    "hidden_dim": 256,
+    "learning_rate": 0.001,
+    "teacher_forcing_ratio": 0.5,
+    "dropout": 0.2,
+    "num_layers": 1
+  },
+  "lstm": {
+    "bleu_score": 0.007708766581504311,
+    "train_losses": [
+      7.2038186836242675,
+      6.467896914482116,
+      6.200631637573242,
+      5.9450487041473385,
+      5.670041537284851,
+      5.396883897781372,
+      5.0885095071792605,
+      4.791969163417816
+    ],
+    "val_losses": [
+      6.856099910736084,
+      6.865054550170899,
+      6.827302875518799,
+      6.878600597381592,
+      6.825138530731201,
+      6.858236770629883,
+      6.917568340301513,
+      6.9613315200805665
+    ],
+    "final_train_loss": 4.791969163417816,
+    "final_val_loss": 6.9613315200805665,
+    "sample_translations": [
+      {
+        "english": "On the concluding program of snakes-yagna conducted by Janamejaya, Vaisampayana narrates Mahabharat to the sages and saints gathered there.",
+        "reference": "जनमेजय के सर्प यज्ञ समारोह पर वैशम्पायन जी ऋषि मुनियों को महाभारत सुनाते हुए",
+        "prediction": "इस के की - ऊण्श्छ्ष् - ऊण्श्छ्ष् - ऊण्श्छ्ष् - और और और - और - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+      },
+      {
+        "english": "The opposition even from within the Government continues , though , to be strenuous , and rumour has it that if a sale goes through it is generally because it has the prime minister 's personal backing .",
+        "reference": "हालंकि , विरोध तो सरकार के अंदर से भी जारी है और यह काम भी दुष्कर है पर बताते हैं कि प्रधानमंत्री के निजी समर्थन के चलते ही सौदे हो पा रहे हैं .",
+        "prediction": "यह , यह है , है , यह है , है , यह है , जो कि है , जो कि नहीं नहीं है , जो कि उसे नहीं है , जो कि उसे नहीं है ."
+      },
+      {
+        "english": "all the business, all the commerce.",
+        "reference": "सभी व्यापार, सभी वाणिज्य.",
+        "prediction": "हमने के बारे में ."
+      },
+      {
+        "english": "There are many agencies and groups who will also be willing and able to support you .",
+        "reference": "ऐसी बहुत-सी संस्थाएँ और संगठन हैं , जो अपकी सहायता करने योग्य हैं और इच्छुक हैं .",
+        "prediction": "और भी , और भी हों और और और और भी नहीं है ."
+      },
+      {
+        "english": "It was easy for me to do so.",
+        "reference": "यह मेरे लिए करना बहुत आसान था।",
+        "prediction": "वह मुझसे नहीं नहीं था ।"
+      }
+    ]
+  }
+}
